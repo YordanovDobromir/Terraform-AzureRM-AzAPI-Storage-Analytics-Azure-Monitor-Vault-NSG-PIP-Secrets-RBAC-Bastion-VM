@@ -1,7 +1,43 @@
-Showcase of using Terraform, deploying on Azure with AzureRM and AzAPI according to the course by Mark Tinderholt.
+# Terraform Azure Infrastructure Showcase
 
-Contains examples of deploying various resources such as Azure Storage, Log Analytis, Azure Monitor, Key Vault, RBAC, Virtual Networks with Subnets, Network Security Group, Private and Public Keys, Secrets, Linux VM with SSH, Entra ID and Bastion.
+This repository showcases using **Terraform** to deploy infrastructure on **Microsoft Azure**
+using the **AzureRM** and **AzAPI** providers, based on the course by Mark Tinderholt.
 
-Deploying via .debug.sh Script taking care of the backend.
+## Project goals
+Deploying and managing Azure resources using Infrastructure as Code (IaC),
+with support for **Dev** and **Prod** environments.
 
-Supports Dev and Prod Environments.
+## Resources deployed
+- Azure Storage Account
+- Log Analytics Workspace
+- Azure Monitor
+- Key Vault
+- RBAC (Role Assignments)
+- Virtual Network & Subnets
+- Network Security Groups (NSG)
+- Private & Public Keys
+- Secrets
+- Linux Virtual Machine (SSH access)
+- Entra ID integration
+- Azure Bastion
+
+## Deployment
+Infrastructure is deployed using the `.debug.sh` script, which:
+- Initializes Terraform
+- Configures the remote backend
+- Sets the environment variables
+- Applies the selected environment configuration
+
+## Environments
+- `dev`
+- `prod`
+
+Each environment is isolated and deployed independently.
+
+## Prerequisites
+- Terraform
+- Azure CLI
+- Azure subscription with sufficient permissions
+
+## Disclaimer
+This repository is for **learning and demonstration purposes**.
